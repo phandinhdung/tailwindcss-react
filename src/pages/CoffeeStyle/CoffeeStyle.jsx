@@ -1,6 +1,33 @@
+import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
 function CoffeeStyle() {
+
+  useEffect(() => {
+    const topMenu = document.getElementById('pdd-top-menu');
+    const toggleTopMenuIcon = document.getElementById('pdd-toggle-top-menu-icon')
+
+    const handleClickCoffePage = (e) => {
+      // click icon menu
+      if (toggleTopMenuIcon.contains(e.target)) {
+        topMenu.classList.toggle('hidden'); //hàm toggle(của javascript) sẽ thêm hoặc xóa class hidden trong danh sách class
+        topMenu.classList.toggle('pdd-topmenu-expanded');
+
+      } else { // click bên ngoài icon menu
+        if (topMenu.classList.contains('pdd-topmenu-expanded')) {
+          topMenu.classList.remove('pdd-topmenu-expanded');
+          topMenu.classList.add('hidden');
+        }
+      }
+    };
+    // Phải bắt cả sự kiện bắt bên ngoài, để ẩn đi menu khi click ra ngoài
+    document.addEventListener('click', handleClickCoffePage);
+    return () => {
+      document.removeEventListener('click', handleClickCoffePage);
+    }
+  }, []);
+
+
   return (
     <div className="bg-yellow-50">
       <div className="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8">
@@ -44,8 +71,8 @@ function CoffeeStyle() {
                 </a>
               </li>
             </ul>
-            <div id="pdd-toggle-top-menu-icon" className="basis-1/6 lg:hidden flex items-center cursor-pointer px-3 sm:px-8">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+            <div id="pdd-toggle-top-menu-icon" className="basis-1/6 lg:hidden items-center cursor-pointer px-3 sm:px-8">
+              <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </div>
