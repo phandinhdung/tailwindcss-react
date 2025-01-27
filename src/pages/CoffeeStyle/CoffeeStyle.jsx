@@ -29,7 +29,7 @@ function CoffeeStyle() {
 
 
   return (
-    <div className="bg-yellow-50">
+    <div>
       <div className="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8">
         <header className="py-6 mx-auto">
           <nav className="flex flex-row justify-between items-center relative">
@@ -80,10 +80,9 @@ function CoffeeStyle() {
         </header>
 
         {/* ==============End Header===================== */}
-
         <main>
-          <div className="slider h-[530px] bg-[url('./src/assets/image/slider-bg.jpg')] bg-cover bg-no-repeat bg-bottom">
-            <div className="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-35">
+          <div className="slider h-[530px] bg-[url('./src/assets/image/slider-bg.jpg')] bg-cover bg-no-repeat bg-bottom rounded-md">
+            <div className="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-35 rounded-md">
               <div className="mx-16 text-white text-center">
                 <div className="uppercase mb-6">Best place to buy design</div>
                 <div className="font-medium text-5xl mb-6">Coffee Mugs</div>
@@ -143,10 +142,10 @@ function CoffeeStyle() {
           <div className="featured-mugs w-[95%] lg:w-[65%] mx-auto mb-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
               <div className="pdd-procduct-card">
-                <div className="h-[400px] sm:h-[540px] bg-[url('./src/assets/image/mug0.jpg')] bg-cover bg-no-repeat bg-center">
+                <div className="h-[400px] sm:h-[540px] bg-[url('./src/assets/image/mug0.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   <a href="#" alt="phandinhdung">
                     <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
-                  hover:duration-300 relative group">
+                  hover:duration-300 relative group rounded-md">
                       <div className="pdd-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2
                     hidden group-hover:block group-hover:animate-fadeIn">Explore Mugs</div>
                     </div>
@@ -163,9 +162,9 @@ function CoffeeStyle() {
               </div>
 
               <div className="pdd-procduct-card">
-                <div className="h-[400px] sm:h-[540px] bg-[url('./src/assets/image/mug1.jpg')] bg-cover bg-no-repeat bg-center">
+                <div className="h-[400px] sm:h-[540px] bg-[url('./src/assets/image/mug1.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   <a href="#" alt="phandinhdung">
-                    <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
+                    <div className="rounded-md w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
                   hover:duration-300 relative group">
                       <div
                         className="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
@@ -199,9 +198,9 @@ function CoffeeStyle() {
           <div className="more-products w-[95%] xl:w-[65%] mx-auto mb-24">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-4">
               <div className="pdd-procduct-card">
-                <div className="h-[380px] bg-[url('./src/assets/image/mug0.jpg')] bg-cover bg-no-repeat bg-center">
+                <div className="h-[380px] bg-[url('./src/assets/image/mug2.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   <a href="#" alt="phandinhdung">
-                    <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
+                    <div className="rounded-md w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
                   hover:duration-300 relative group">
                       <div className="pdd-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2
                     hidden group-hover:block group-hover:animate-fadeIn">Explore Mugs</div>
@@ -218,9 +217,28 @@ function CoffeeStyle() {
                 </div>
               </div>
               <div className="pdd-procduct-card">
-                <div className="h-[380px] bg-[url('./src/assets/image/mug0.jpg')] bg-cover bg-no-repeat bg-center">
+                <div className="h-[380px] bg-[url('./src/assets/image/mug3.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   <a href="#" alt="phandinhdung">
-                    <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
+                    <div className="rounded-md w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
+                  hover:duration-300 relative group">
+                      <div className="pdd-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2
+                    hidden group-hover:block group-hover:animate-fadeIn">Explore Mugs</div>
+                    </div>
+                  </a>
+                </div>
+                <div className="text-center mt-8">
+                  <a href="#" alt="product-pdd">
+                    <div className="text-xl mb-3 hover:text-coffee-400">Pink Premium Ceramic</div>
+                  </a>
+                  <div>
+                    <span className="text-lg text-coffee-400">$70.00</span>
+                  </div>
+                </div>
+              </div>
+              <div className="pdd-procduct-card">
+                <div className="h-[380px] bg-[url('./src/assets/image/mug4.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
+                  <a href="#" alt="phandinhdung">
+                    <div className="rounded-md w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
                   hover:duration-300 relative group">
                       <div className="pdd-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2
                     hidden group-hover:block group-hover:animate-fadeIn">Explore Mugs</div>
@@ -237,9 +255,9 @@ function CoffeeStyle() {
                 </div>
               </div>
               <div className="pdd-procduct-card">
-                <div className="h-[380px] bg-[url('./src/assets/image/mug0.jpg')] bg-cover bg-no-repeat bg-center">
+                <div className="h-[380px] bg-[url('./src/assets/image/mug5.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   <a href="#" alt="phandinhdung">
-                    <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
+                    <div className="rounded-md w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
                   hover:duration-300 relative group">
                       <div className="pdd-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2
                     hidden group-hover:block group-hover:animate-fadeIn">Explore Mugs</div>
@@ -256,9 +274,9 @@ function CoffeeStyle() {
                 </div>
               </div>
               <div className="pdd-procduct-card">
-                <div className="h-[380px] bg-[url('./src/assets/image/mug0.jpg')] bg-cover bg-no-repeat bg-center">
+                <div className="h-[380px] bg-[url('./src/assets/image/mug1.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   <a href="#" alt="phandinhdung">
-                    <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
+                    <div className="rounded-md w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
                   hover:duration-300 relative group">
                       <div className="pdd-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2
                     hidden group-hover:block group-hover:animate-fadeIn">Explore Mugs</div>
@@ -275,28 +293,9 @@ function CoffeeStyle() {
                 </div>
               </div>
               <div className="pdd-procduct-card">
-                <div className="h-[380px] bg-[url('./src/assets/image/mug0.jpg')] bg-cover bg-no-repeat bg-center">
+                <div className="h-[380px] bg-[url('./src/assets/image/mug0.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   <a href="#" alt="phandinhdung">
-                    <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
-                  hover:duration-300 relative group">
-                      <div className="pdd-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2
-                    hidden group-hover:block group-hover:animate-fadeIn">Explore Mugs</div>
-                    </div>
-                  </a>
-                </div>
-                <div className="text-center mt-8">
-                  <a href="#" alt="product-pdd">
-                    <div className="text-xl mb-3 hover:text-coffee-400">Pink Premium Ceramic</div>
-                  </a>
-                  <div>
-                    <span className="text-lg text-coffee-400">$99.00</span>
-                  </div>
-                </div>
-              </div>
-              <div className="pdd-procduct-card">
-                <div className="h-[380px] bg-[url('./src/assets/image/mug0.jpg')] bg-cover bg-no-repeat bg-center">
-                  <a href="#" alt="phandinhdung">
-                    <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
+                    <div className="rounded-md w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
                   hover:duration-300 relative group">
                       <div className="pdd-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2
                     hidden group-hover:block group-hover:animate-fadeIn">Explore Mugs</div>
@@ -326,14 +325,14 @@ function CoffeeStyle() {
             <div className="flex flex-col md:flex-row justify-center items-center gap-5">
               <div className="pdd-magazine-image basis-1/2 md:flex md:flex-row gap-5 w-full h-full mb-5 md:mb-0">
                 <div
-                  className="pdd-magazine-big-image h-[280px] basis-2/3 mb-3 xs:mb-5 md:mb-0 bg-[url('./src/assets/image/mug1.jpg')] bg-cover bg-no-repeat bg-center">
+                  className="pdd-magazine-big-image h-[280px] basis-2/3 mb-3 xs:mb-5 md:mb-0 bg-[url('./src/assets/image/mug1.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                 </div>
                 <div className="pdd-magazine-small-image basis-1/3 flex flex-row md:flex-col gap-3 xs:gap-5">
                   <div
-                    className="h-[130px] xs:h-[200px] md:h-[130px] basis-1/2 bg-[url('./src/assets/image/mug0.jpg')] bg-cover bg-no-repeat bg-center">
+                    className="h-[130px] xs:h-[200px] md:h-[130px] basis-1/2 bg-[url('./src/assets/image/mug3.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   </div>
                   <div
-                    className="h-[130px] xs:h-[200px] md:h-[130px] basis-1/2 bg-[url('./src/assets/image/mug1.jpg')] bg-cover bg-no-repeat bg-center">
+                    className="h-[130px] xs:h-[200px] md:h-[130px] basis-1/2 bg-[url('./src/assets/image/mug4.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   </div>
                 </div>
               </div>
@@ -349,7 +348,7 @@ function CoffeeStyle() {
           {/* <!--End coffe-magazine--> */}
 
           <div
-            className="pdd-parallax-section bg-[url('./src/assets/image/animation-bg.jpg')] bg-cover bg-no-repeat bg-center h-[450px] mb-24 bg-fixed">
+            className="pdd-parallax-section bg-[url('./src/assets/image/animation-bg.jpg')] bg-cover bg-no-repeat bg-center h-[450px] mb-24 bg-fixed rounded-md">
           </div>
 
           <div className="pdd-subheadline">
@@ -361,9 +360,9 @@ function CoffeeStyle() {
           <div className="lifestyle-stories w-[95%] xl:w-[65%] mx-auto mb-24">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-4">
               <div className="pdd-lifestyle-story-card">
-                <div className="h-[300px] bg-[url('./src/assets/image/story1.jpg')] bg-cover bg-no-repeat bg-center">
+                <div className="h-[300px] bg-[url('./src/assets/image/story1.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   <a href="#" alt="phandinhdung">
-                    <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
+                    <div className="rounded-md w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
               hover:duration-300 relative group">
                       <div className="pdd-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2
                 hidden group-hover:block group-hover:animate-fadeIn">Read the full story</div>
@@ -386,9 +385,9 @@ function CoffeeStyle() {
               </div>
 
               <div className="pdd-lifestyle-story-card">
-                <div className="h-[300px] bg-[url('./src/assets/image/story2.jpg')] bg-cover bg-no-repeat bg-center">
+                <div className="h-[300px] bg-[url('./src/assets/image/story2.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   <a href="#" alt="phandinhdung">
-                    <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
+                    <div className="rounded-md w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
               hover:duration-300 relative group">
                       <div className="pdd-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2
                 hidden group-hover:block group-hover:animate-fadeIn">Read the full story</div>
@@ -411,9 +410,9 @@ function CoffeeStyle() {
               </div>
 
               <div className="pdd-lifestyle-story-card">
-                <div className="h-[300px] bg-[url('./src/assets/image/story3.jpg')] bg-cover bg-no-repeat bg-center">
+                <div className="h-[300px] bg-[url('./src/assets/image/story3.jpg')] bg-cover bg-no-repeat bg-center rounded-md">
                   <a href="#" alt="phandinhdung">
-                    <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
+                    <div className="rounded-md w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out
               hover:duration-300 relative group">
                       <div className="pdd-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2
                 hidden group-hover:block group-hover:animate-fadeIn">Read the full story</div>
@@ -436,9 +435,9 @@ function CoffeeStyle() {
               </div>
             </div>
           </div>
-          {/* =========End lifestyle-stories================= */}
+          {/* =========End lifestyle-stories=================  1d1f2e*/}
 
-          <div className="subscribe-us h-[350px] bg-[#1d1f2e] mb-24 mx-6 flex flex-col justify-center items-center">
+          <div className="subscribe-us h-[350px] bg-[#2f3640] mb-24 mx-0 sm:mx-6 flex flex-col justify-center items-center rounded-md">
             <div className="flex justify-center items-center mb-3">
               <div className="w-8 h-px bg-gray-500"></div>
               <div className="uppercase mx-4 tracking-widest text-gray-400 font-medium text-xs text-center">Sign up and get
@@ -451,9 +450,9 @@ function CoffeeStyle() {
             <div className="pdd-form flex flex-col md:flex-row justify-center items-center gap-3">
               <div className="pdd-form-item">
                 <input type="email" placeholder="abc@gmail.com"
-                  className="px-3 py-4 w-[250px] sm:w-[350px] xs:max-w-full bg-inherit border-[1px] border-gray-700
+                  className="px-3 py-4 w-[250px] sm:w-[350px] xs:max-w-full bg-inherit border-[1px] border-gray-500
           outline-none text-white leading-5 hover:border-gray-300 focus:border-gray-300 duration-500 placeholder:text-center
-          placeholder:text-xs placeholder:tracking-widest placeholder:font-semibold" />
+          placeholder:text-xs placeholder:tracking-widest placeholder:font-semibold rounded-md" />
               </div>
               <div className="pdd-form-item">
                 <button type="submit" className="pdd-button bg-white text-gray-900 w-max">Subscribe</button>
@@ -494,7 +493,7 @@ function CoffeeStyle() {
 
             <div className="basis-2/6">
               <div className="uppercase font-semibold tracking-wider text-gray-600 mb-4">Contact Us</div>
-              <div className="mb-4">We&apos;re Always Happy to Help</div>
+              <div className="mb-4">We&apos;re always happy to help</div>
               <div className="mb-16 text-gray-800 text-[22px] tracking-wide"><a href="mailto:phandinhdungcv@gmail.com"
                 className="hover:text-coffee-400">phandinhdungcv@gmail.com</a></div>
               <div className=""><a href="https://github.com/phandinhdung" target="_blank" className="hover:text-coffee-400">Code
