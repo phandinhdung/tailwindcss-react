@@ -9,7 +9,7 @@ function Collections() {
       <div className="mt-6 space-x-2">
         {
           TAGS.map(tag => (
-            <a key={tag} className={`mb-2 inline-block cursor-pointer rounded-sm bg-white px-4 py-3 hover:text-blue-400`} id={tag}>
+            <a key={tag} className={`rounded-md mb-2 inline-block cursor-pointer bg-white px-4 py-3 hover:text-blue-400`} id={tag}>
               {tag}
             </a>
           )
