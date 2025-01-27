@@ -43,12 +43,31 @@ function UsersList() {
             <h3 className='font-Poppins font-black'>Sophie</h3>
             <p className='font-Poppins text-sm'>Student</p>
             <div className='mt-4 space-x-2'>
-              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 text-blue-500'>React</span>
-              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 text-blue-500'>Javascript</span>
-              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 text-blue-500'>Node.js</span>
+              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 py-[2px] text-blue-500'>React</span>
+              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 py-[2px] text-blue-500'>Javascript</span>
+              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 py-[2px] text-blue-500'>Node.js</span>
             </div>
           </div>
         </div>
+        {/* user */}
+        <div className='flex p-4 rounded-xl cursor-pointer gap-x-4 hover:border-blue-400 border-2 hover:shadow-lg border-transparent'>
+          <img
+            src="./src/assets/image/girl2.jpg"
+            className='size-24 rounded-full object-fill'
+            alt=""
+          />
+
+          <div>
+            <h3 className='font-Poppins font-black'>Sophie</h3>
+            <p className='font-Poppins text-sm'>Student</p>
+            <div className='mt-4 space-x-2'>
+              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 py-[2px] text-blue-500'>React</span>
+              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 py-[2px] text-blue-500'>Javascript</span>
+              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 py-[2px] text-blue-500'>Node.js</span>
+            </div>
+          </div>
+        </div>
+
         {/* user */}
         <div className='flex p-4 rounded-xl cursor-pointer gap-x-4 hover:border-blue-400 border-2 hover:shadow-lg border-transparent'>
           <img
@@ -61,28 +80,9 @@ function UsersList() {
             <h3 className='font-Poppins font-black'>Sophie</h3>
             <p className='font-Poppins text-sm'>Student</p>
             <div className='mt-4 space-x-2'>
-              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 text-blue-500'>React</span>
-              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 text-blue-500'>Javascript</span>
-              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 text-blue-500'>Node.js</span>
-            </div>
-          </div>
-        </div>
-
-        {/* user */}
-        <div className='flex p-4 rounded-xl cursor-pointer gap-x-4 hover:border-blue-400 border-2 hover:shadow-lg border-transparent'>
-          <img
-            src="./src/assets/image/girl1.jpg"
-            className='size-24 rounded-full'
-            alt=""
-          />
-
-          <div>
-            <h3 className='font-Poppins font-black'>Sophie</h3>
-            <p className='font-Poppins text-sm'>Student</p>
-            <div className='mt-4 space-x-2'>
-              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 text-blue-500'>React</span>
-              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 text-blue-500'>Javascript</span>
-              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 text-blue-500'>Node.js</span>
+              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 py-[2px] text-blue-500'>React</span>
+              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 py-[2px] text-blue-500'>Javascript</span>
+              <span className='inline-block rounded-full text-xs text-[%516FD4] border-[1px] border-slate-500 px-1 py-[2px] text-blue-500'>Node.js</span>
             </div>
           </div>
         </div>
