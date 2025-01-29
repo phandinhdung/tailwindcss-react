@@ -3,12 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CoffeeStyle from './pages/CoffeeStyle/CoffeeStyle.jsx';
-import Home from './pages/Home/Home.jsx';
-import MainLayout from './components/Layout/Layout.jsx';
-import Header from './components/Header/Header.jsx';
-import Footer from './components/Footer/Footer.jsx';
-import Button from './components/Button/Button.jsx';
-
+import Home from './pages/UIComponent/Home.jsx';
+import HomeEComerse from '@/pages/ECommerse/HomeHomeEComerse/HomeEComerse';
 
 const routers = createBrowserRouter([
   {
@@ -21,10 +17,7 @@ const routers = createBrowserRouter([
   },
   {
     path: "/eCommerse",
-    element:
-      <MainLayout>
-        <Header />
-      </MainLayout>
+    element: <HomeEComerse />
   },
 ]);
 

@@ -19,18 +19,22 @@ export default {
       },
       fontFamily: {
         Poppins: ['Poppins', 'sans-serif'],
+        Roboto: ['Roboto', 'sans-serif'],
         Karla: ['Karla', 'sans-serif']
       },
       keyframes: {
+        // Hiệu ứng trượt ra cho thanh menu khi ấn vào icon menu ở màn hình nhỏ
         slideDown: {
           '0%': { transform: 'translateY(-100%)' },
           '100%': { transform: 'translateY(0)' },
         },
         fadeIn: {
+          //Hiệu ứng cho nút Explore mug
           from: {opacity: 0},
           to: {opacity: 1}
         }
       },
+      // Tích hợp hiệu ứng vào animation
       animation: {
         slideDown: 'slideDown .5s ease-in-out',
         fadeIn: 'fadeIn .5s ease-in-out'

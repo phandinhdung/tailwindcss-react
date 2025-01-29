@@ -23,24 +23,24 @@ function Collections() {
         <div className="rounded-3xl bg-white p-6">
           <div>
             <img
-              src="./src/assets/image/girl1.jpg"
+              src="./src/assets/images/girl1.jpg"
               className="aspect-video w-full rounded-2xl object-cover object-top"
             />
           </div>
 
           <div className="mt-4 grid grid-cols-3 gap-4">
             <img
-              src="./src/assets/image/girl1.jpg"
+              src="./src/assets/images/girl1.jpg"
               className="aspect-video w-full rounded-2xl object-cover"
             />
 
             <img
-              src="./src/assets/image/girl1.jpg"
+              src="./src/assets/images/girl1.jpg"
               className="aspect-video w-full rounded-2xl object-cover"
             />
 
             <img
-              src="./src/assets/image/girl1.jpg"
+              src="./src/assets/images/girl1.jpg"
               className="aspect-video w-full rounded-2xl object-cover"
             />
           </div>
@@ -59,24 +59,24 @@ function Collections() {
         <div className="rounded-3xl bg-white p-6">
           <div>
             <img
-              src="./src/assets/image/girl2.jpg"
+              src="./src/assets/images/girl2.jpg"
               className="aspect-video w-full rounded-2xl object-cover object-top"
             />
           </div>
 
           <div className="mt-4 grid grid-cols-3 gap-4">
             <img
-              src="./src/assets/image/girl2.jpg"
+              src="./src/assets/images/girl2.jpg"
               className="aspect-video w-full rounded-2xl object-cover object-center"
             />
 
             <img
-              src="./src/assets/image/girl2.jpg"
+              src="./src/assets/images/girl2.jpg"
               className="aspect-video w-full rounded-2xl object-cover"
             />
 
             <img
-              src="./src/assets/image/girl2.jpg"
+              src="./src/assets/images/girl2.jpg"
               className="aspect-video w-full rounded-2xl object-cover"
             />
           </div>
@@ -96,24 +96,24 @@ function Collections() {
         <div className="rounded-3xl bg-white p-6">
           <div>
             <img
-              src="./src/assets/image/girl1.jpg"
+              src="./src/assets/images/girl1.jpg"
               className="aspect-video w-full rounded-2xl object-cover"
             />
           </div>
 
           <div className="mt-4 grid grid-cols-3 gap-4">
             <img
-              src="./src/assets/image/girl1.jpg"
+              src="./src/assets/images/girl1.jpg"
               className="aspect-video w-full rounded-2xl object-cover"
             />
 
             <img
-              src="./src/assets/image/girl1.jpg"
+              src="./src/assets/images/girl1.jpg"
               className="aspect-video w-full rounded-2xl object-cover"
             />
 
             <img
-              src="./src/assets/image/girl1.jpg"
+              src="./src/assets/images/girl1.jpg"
               className="aspect-video w-full rounded-2xl object-cover"
             />
           </div>

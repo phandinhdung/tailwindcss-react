@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./", //cấp cao nhất: thư mục dự dán
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@assets/*": ["src/assets/*"]
+    },
+  },
+  "include": ["src/**/*"]
+}

@@ -4,7 +4,7 @@ function UserProfile() {
   return (
     <div className="flex w-[36rem] gap-x-4 rounded-lg p-12 bg-gray-50">
       <img 
-        src="./src/assets/image/girl1.jpg"
+        src="./src/assets/images/girl1.jpg"
         className="w-32 rounded-full border-[5px] border-[#f4be95] self-start"
       />
       <div className="space-y-7 text-left text-[#1c2b62] ">

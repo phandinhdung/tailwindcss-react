@@ -34,7 +34,7 @@ function UsersList() {
         {/* user */}
         <div className='flex p-4 rounded-xl cursor-pointer gap-x-4 hover:border-blue-400 border-2 hover:shadow-lg border-transparent'>
           <img
-            src="./src/assets/image/girl1.jpg"
+            src="./src/assets/images/girl1.jpg"
             className='size-24 rounded-full'
             alt=""
           />
@@ -52,7 +52,7 @@ function UsersList() {
         {/* user */}
         <div className='flex p-4 rounded-xl cursor-pointer gap-x-4 hover:border-blue-400 border-2 hover:shadow-lg border-transparent'>
           <img
-            src="./src/assets/image/girl2.jpg"
+            src="./src/assets/images/girl2.jpg"
             className='size-24 rounded-full object-fill'
             alt=""
           />
@@ -71,7 +71,7 @@ function UsersList() {
         {/* user */}
         <div className='flex p-4 rounded-xl cursor-pointer gap-x-4 hover:border-blue-400 border-2 hover:shadow-lg border-transparent'>
           <img
-            src="./src/assets/image/girl1.jpg"
+            src="./src/assets/images/girl1.jpg"
             className='size-24 rounded-full'
             alt=""
           />
