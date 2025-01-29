@@ -1,5 +1,5 @@
 import MyBoxIcon from './BoxIcon/BoxIcon'
-import { dataBoxIcon, dataMenu } from './BoxIcon/constants'
+import { dataBoxIcon, dataMenu } from './constants'
 import Menu from './Menu/Menu'
 import Logo from '@icons/images/Logo-retina.png';
 import reLoadIcon from '@icons/svgs/reloadIcon.svg';
@@ -21,7 +21,7 @@ function Header() {
           {
             dataMenu.slice(0, 3).map((item, index) => {
               return (
-                <Menu className="pdd-top-menu-item" key={index} content={item.content} href={item.href} />
+                <Menu key={index} content={item.content} href={item.href} />
               )
             })
           }

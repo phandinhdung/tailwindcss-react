@@ -110,7 +110,7 @@ function CoffeeStyle() {
               </div>
               <div className="flex flex-col md:flex-row md:text-left gap-3">
                 <div className="basis-1/2 md:w-[500px] lg:w-[700px]">
-                  <video src="./src/assets/video/coffeeCup.mp4" autoPlay loop muted className="rounded-xl w-full h-ful object-cover" />
+                  <video src="./src/assets/video/coffeeCup.mp4" autoPlay loop muted className="rounded-xl w-full h-full object-cover" />
                 </div>
 
                 <div className="basis-1/2">

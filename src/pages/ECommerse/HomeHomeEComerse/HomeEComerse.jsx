@@ -10,12 +10,15 @@ import HeadingListProducts from '@components/HeadingListProducts/HeadingListProd
 function HomeEComerse() {
   return (
     <>
-      <div className='relative -z-10'>
+      <div>
         <Header />
-        <Banner />
+        <Banner className='relative z-0'/>
+        <MainLayout className='relative z-1'>
+          <Info />
+        </MainLayout>
       </div>
+
       <MainLayout>
-        <Info />
         <AdvancedHeadling />
         <HeadingListProducts />
       </MainLayout>
