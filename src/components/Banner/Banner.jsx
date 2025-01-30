@@ -1,7 +1,7 @@
 
 function Banner() {
   return (
-    <div className="bg-[url('./src/assets/images/banner-Eco.jpeg')] min-h-[750px] bg-no-repeat bg-center flex justify-center items-center">
+    <div className="bg-[url('./src/assets/images/banner-Eco.jpeg')] min-h-[750px] bg-no-repeat bg-center flex justify-center items-center w-dvw">
       <div className="flex flex-col gap-5 justify-center items-center">
         <h1 className="text-[42px] text-[#222222] font-Poppins text-center">XStore Marseille</h1>
         <p className="text-center text-[#555555]">

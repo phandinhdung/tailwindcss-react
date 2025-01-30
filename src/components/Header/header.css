@@ -1,0 +1,8 @@
+.normalHeader {
+  @apply w-[1250px] flex items-center h-[83px] justify-between mx-auto absolute top-0 right-0 left-0
+}
+
+.fixedHeader {
+  @apply fixed top-[-83px] left-0 right-0 w-dvw flex items-center h-[83px] justify-between px-40 bg-gray-100 
+  translate-y-[83px] transition-transform duration-700 z-10 shadow backdrop-blur-sm  backdrop-opacity-90 opacity-95
+}

@@ -6,7 +6,8 @@ import JobList from "@components/UITemplate/Two/JobList"
 import ParentMenu from "../ParentMenu/ParentMenu"
 
 function Home() {
-
+  window.scrollTo(0, 0);
+  
   return (
     <div className='flex flex-col items-center justify-center gap-5 bg-[#ab81db] py-9'>
       <UsersList />

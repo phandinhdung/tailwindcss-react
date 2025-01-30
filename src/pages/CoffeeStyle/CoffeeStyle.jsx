@@ -4,7 +4,8 @@ import './coffeeStyle.css'
 import ParentMenu from "@/pages/ParentMenu/ParentMenu";
 
 function CoffeeStyle() {
-
+  window.scrollTo(0, 0);
+  
   useEffect(() => {
     const topMenu = document.getElementById('pdd-top-menu');
     const toggleTopMenuIcon = document.getElementById('pdd-toggle-top-menu-icon')
