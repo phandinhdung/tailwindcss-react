@@ -75,7 +75,7 @@ function Header() {
 
             <div className='flex justify-center items-center ml-6 gap-6'>
               <TfiReload onClick={()=>handleOpenSidebar('compare')} className='text-[20px] cursor-pointer'/>
-              <IoMdHeartEmpty onClick={()=>handleOpenSidebar('wishlist')} className='text-[25px] cursor-pointer'/>
+              <IoMdHeartEmpty onClick={()=>handleOpenSidebar('wishList')} className='text-[25px] cursor-pointer'/>
               <BsCart3 onClick={()=>handleOpenSidebar('cart')} className='text-[25px] cursor-pointer'/>
             </div>
           </div>

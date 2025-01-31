@@ -1,10 +1,10 @@
 import { IoMdClose } from "react-icons/io";
-import './compare.css'
+import './productMiniItem.css'
 
-function CompareItem() {
+function ProductMiniItem({imageScr}) {
   return (
-    <div className="pdd-product-compare-cart relative w-full flex bg-gray-100 hover:bg-gray-200 transition-all duration-300 ease-linear px-3 py-4 rounded-md">
-      <img className="w-[70px]" src='./src/assets/images/manMin1.jpg' alt="image" />
+    <div className="pdd-product-item relative w-full flex bg-gray-100 hover:bg-gray-200 transition-all duration-300 ease-linear px-3 py-4 rounded-md">
+      <img className="w-[70px]" src={imageScr} alt="image" />
       <div className="ml-3 text-[#333] text-[15px]">
         <div>Titlte of product</div>
         <div>$9999.99</div>
@@ -14,4 +14,4 @@ function CompareItem() {
   )
 }
 
-export default CompareItem
+export default ProductMiniItem
