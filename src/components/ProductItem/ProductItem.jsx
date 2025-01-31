@@ -1,10 +1,10 @@
-import reLoadIcon from '@icons/svgs/reloadIcon.svg';
-import hearIcon from '@icons/svgs/heartIcon.svg';
-import cartIcon from '@icons/svgs/cartIcon.svg';
-import eyeIcon from '@icons/svgs/eyeIcon.svg';
+import { TfiReload } from "react-icons/tfi";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { BsCart3 } from "react-icons/bs";
+import { IoEyeOutline } from "react-icons/io5";
 import './productItem.css'
 
-function ProductItem({firstImage, secondImage, name, price}) {
+function ProductItem({ firstImage, secondImage, name, price }) {
   return (
     <div>
       <div className="product-item relative cursor-pointer">
@@ -12,18 +12,18 @@ function ProductItem({firstImage, secondImage, name, price}) {
         <div className={`showHideSecondProductImage h-[400px] w-[292px] bg-[url('${secondImage}')] bg-center bg-cover bg-no-repeat rounded-md`} />
         {/* <div className={`showHideFirstProductImage h-[400px] w-[292px] bg-[url('./src/assets/images/man20.jpg')] bg-center bg-cover bg-no-repeat rounded-md`} /> */}
         {/* <div className="showHideSecondProductImage h-[400px] w-[292px] bg-[url('./src/assets/images/man21.jpg')] bg-center bg-cover bg-no-repeat rounded-md" /> */}
-        <div className='showFunctionIcons flex flex-col absolute bottom-7'>
+        <div className='showFunctionIcons flex flex-col justify-center items-center absolute bottom-7'>
           <div className='boxIcon rounded-t-md'>
-            <img src={cartIcon} alt='' />
+            <BsCart3 className='text-[20px]' />
           </div>
           <div className='boxIcon'>
-            <img src={hearIcon} alt='' />
+            <IoMdHeartEmpty className='text-[23px]' />
           </div>
           <div className='boxIcon'>
-            <img src={reLoadIcon} alt='' />
+            <TfiReload className='text-[20px]' />
           </div>
           <div className='boxIcon rounded-b-md'>
-            <img src={eyeIcon} alt='' />
+            <IoEyeOutline className='text-[20px]' />
           </div>
         </div>
       </div>

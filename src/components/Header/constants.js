@@ -5,12 +5,12 @@ const dataBoxIcon = [
 ];
 
 const dataMenu = [
-  { content: 'Elements', href: '#' },
-  { content: 'Our Shop', href: '#' },
-  { content: 'About us', href: '#' },
-  { content: 'Contacts', href: '#' },
-  { content: 'Search', href: '#' },
-  { content: 'Sign in', href: '#' }
+  { content: 'Elements', href: 'elements' },
+  { content: 'Our Shop', href: 'ourShop' },
+  { content: 'About us', href: 'aboutUs' },
+  { content: 'Contacts', href: 'contacts' },
+  { content: 'Search', href: 'search' },
+  { content: 'Sign in', href: 'login' }
 ];
 
 export { dataBoxIcon, dataMenu };

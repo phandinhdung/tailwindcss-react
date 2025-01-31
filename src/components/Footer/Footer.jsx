@@ -16,7 +16,7 @@ function Footer() {
       </div>
       <p className='text-white font-Poppins tracking-widest'>Guaranteed safe checkout</p>
       <div className="bg-[url('./src/assets/images/checkout.png')] bg-cover w-[270px] h-[29px]"/>
-      <p className='text-white font-Poppins tracking-widest'>Copyright © 2025 XStore theme. Created by Phan Dinh Dung</p>
+      <p className='text-white font-Poppins tracking-widest'>Copyright © 2025 XStore. Created by Phan Dinh Dung</p>
     </div>
   )
 }

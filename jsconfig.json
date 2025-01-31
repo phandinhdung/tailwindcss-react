@@ -3,7 +3,8 @@
     "baseUrl": "./", //cấp cao nhất: thư mục dự dán
     "paths": {
       "@components/*": ["src/components/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      "@contexts/*": ["src/contexts/*"]
     },
   },
   "include": ["src/**/*"]

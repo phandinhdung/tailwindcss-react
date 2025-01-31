@@ -1,0 +1,11 @@
+
+.pdd-overlay {
+  @apply fixed top-0 left-0 right-0 bottom-0 bg-[#0000004d] z-[3] transition-all duration-500 ease-linear
+}
+.pdd-sidebar{
+  @apply fixed top-0 right-0 w-[350px] bg-[#fff] z-[4] h-dvh translate-x-[350px] transition-all duration-500
+}
+
+.pdd-showSidebar {
+  @apply translate-x-0
+}
