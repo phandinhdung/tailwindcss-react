@@ -1,12 +1,18 @@
 import { IoEyeOutline } from "react-icons/io5";
 import { FaRegEyeSlash } from "react-icons/fa";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from 'yup';
+import { ToastContext } from "@contexts/ToastProvider";
+import { login } from "@/apis/authService";
+import Cookies from "js-cookie";
 
 function Login() {
   const [isPasswordType, setIsPasswordType] = useState(true);
   const typeOfPasswordInput = (isPasswordType ? "password" : "text");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const { toast } = useContext(ToastContext);
 
   const formik = useFormik({
     initialValues: {
@@ -21,10 +27,30 @@ function Login() {
         .min(6, 'Password must be at least 6 characters')
         .required('Password is required')
     }),
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+      if(isLoading) return;
+
+      const { email: username, password } = values;
+
+      setIsLoading(true);
+      await login({ username, password })
+        .then((res) => {
+          setIsLoading(false);
+
+          const {id, token, refreshToken } = res.data;
+          Cookies.set('token', token);
+          Cookies.set('refeshToken', refreshToken);
+          Cookies.set('userId', id);
+
+          toast.success("Sign in successfully");
+        })
+        .catch((err) => {
+          toast.error(err.response.data.message);
+          setIsLoading(false);
+        })
     }
   })
+  
   const handleShowHidePassword = () => {
     setIsPasswordType(!isPasswordType);
   };
@@ -79,7 +105,7 @@ function Login() {
           <span className="text-[14px]">Remember me</span>
         </div>
 
-        <button type="submit" className="w-full text-center text-white bg-black hover:bg-gray-900 mt-3 rounded-md py-1">Login</button>
+        <button type="submit" className="w-full text-center text-white bg-black hover:bg-gray-900 mt-3 rounded-md py-1">{isLoading? "Loading..." : "Login"}</button>
       </form>
 
       <p className="mt-5 text-center font-[14px] hover:underline cursor-pointer">Lost your password</p>

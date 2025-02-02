@@ -37,7 +37,8 @@ export default {
       // Tích hợp hiệu ứng vào animation
       animation: {
         slideDown: 'slideDown .5s ease-in-out',
-        fadeIn: 'fadeIn .5s ease-in-out'
+        fadeIn: 'fadeIn .5s ease-in-out',
+        'spin-fast': 'spin 0.5s linear infinite',
       }
     }
   },

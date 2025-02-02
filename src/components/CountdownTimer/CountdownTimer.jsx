@@ -36,15 +36,15 @@ function CountdownTimer({ targetDate }) {
   Object.keys(timeLeft).forEach((interval) => {
     if (timeLeft[interval] !== undefined) {
       timerComponents.push(
-        <span className="capitalize bg-white px-2 py-1 rounded-md" key={interval}>
+        <span className="capitalize bg-white px-2 py-1 rounded-md border-gray-300 border-[1px]" key={interval}>
           {formatNumber(timeLeft[interval])}{' '}
-          <span className="text-gray-400 font-bold">{interval}</span>
+          <span className="text-gray-700">{interval}</span>
         </span>
       )
     }
   });
 
-  return timerComponents;
+  return <div className="flex justify-center items-center whitespace-nowrap gap-3">{timerComponents}</div>
 }
 
 export default CountdownTimer
