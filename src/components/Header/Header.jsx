@@ -14,7 +14,7 @@ function Header() {
   const { scrollPosition } = useScrollHandling();
   const [fixedPosition, setFixedPosition] = useState(false);
 
-  const { setIsOpen, setType} = useContext(SidebarContext);
+  const { setIsOpen, setType } = useContext(SidebarContext);
 
   useEffect(() => {
     // if (scrollPosition > 80) {
@@ -74,9 +74,9 @@ function Header() {
             </div>
 
             <div className='flex justify-center items-center ml-6 gap-6'>
-              <TfiReload onClick={()=>handleOpenSidebar('compare')} className='text-[20px] cursor-pointer'/>
-              <IoMdHeartEmpty onClick={()=>handleOpenSidebar('wishList')} className='text-[25px] cursor-pointer'/>
-              <BsCart3 onClick={()=>handleOpenSidebar('cart')} className='text-[25px] cursor-pointer'/>
+              <TfiReload onClick={() => handleOpenSidebar('compare')} className='text-[20px] cursor-pointer' />
+              <IoMdHeartEmpty onClick={() => handleOpenSidebar('wishList')} className='text-[25px] cursor-pointer' />
+              <BsCart3 onClick={() => handleOpenSidebar('cart')} className='text-[25px] cursor-pointer' />
             </div>
           </div>
         </div>

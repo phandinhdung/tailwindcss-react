@@ -1,11 +1,37 @@
 
 .pdd-overlay {
-  @apply fixed top-0 left-0 right-0 bottom-0 bg-[#0000004d] z-[3] transition-all duration-500 ease-linear
+  @apply fixed top-0 left-0 right-0 bottom-0 z-[3] transition-opacity duration-500 ease-linear  bg-[#0000004d] opacity-100
 }
+
+.pdd-overlay-none {
+  @apply opacity-0
+}
+
 .pdd-sidebar{
   @apply fixed top-0 right-0 w-[350px] bg-[#fff] z-[4] h-dvh translate-x-[350px] transition-all duration-500
 }
 
 .pdd-showSidebar {
   @apply translate-x-0
+}
+
+.pdd-abce{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 350px;
+  background-color: white;
+  z-index: 4;
+  height: 100dvh;
+  animation: example 0.3s ease-out
+}
+
+@keyframes example {
+  from {right: -350px;}
+  to {right: 0px;}
+}
+
+@keyframes example2 {
+  from {right: 0px;}
+  to {right: -350px;}
 }

@@ -3,8 +3,17 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import { BsCart3 } from "react-icons/bs";
 import { IoEyeOutline } from "react-icons/io5";
 import './productItem.css'
+import { useContext } from "react";
+import { SidebarContext } from "@contexts/SidebarProvider";
 
 function ProductItem({ firstImage, secondImage, name, price }) {
+  const { setIsOpen, setType } = useContext(SidebarContext);
+
+  const handleOnClickEyeIcon = () => {
+    setIsOpen(true);
+    setType('productDetail');
+  }
+
   return (
     <div>
       <div className="product-item relative cursor-pointer">
@@ -22,7 +31,7 @@ function ProductItem({ firstImage, secondImage, name, price }) {
           <div className='boxIcon'>
             <TfiReload className='text-[20px]' />
           </div>
-          <div className='boxIcon rounded-b-md'>
+          <div onClick={handleOnClickEyeIcon} className='boxIcon rounded-b-md'>
             <IoEyeOutline className='text-[20px]' />
           </div>
         </div>
