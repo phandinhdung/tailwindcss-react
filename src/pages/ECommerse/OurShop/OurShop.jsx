@@ -3,7 +3,6 @@ import Header from "@components/Header/Header"
 import MainLayout from "@components/MainLayout/MainLayout"
 import ShopBanner from "@pages/ECommerse/OurShop/components/ShopBanner";
 import ShopProductList from "@pages/ECommerse/OurShop/components/ShopProductList";
-import ParentMenu from "@pages/ParentMenu/ParentMenu";
 import { useNavigate } from "react-router-dom"
 
 function OurShop() {

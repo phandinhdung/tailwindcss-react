@@ -9,7 +9,7 @@ function Home() {
   window.scrollTo(0, 0);
   
   return (
-    <div className='flex flex-col items-center justify-center gap-5 bg-[#ab81db] py-9'>
+    <div className="flex flex-col items-center justify-center gap-5 bg-[url('./src/assets/images/uibg1.jpg')] bg-fixed bg-cover py-9">
       <UsersList />
       <ReviewForm />
       <Collections />
